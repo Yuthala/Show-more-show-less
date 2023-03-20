@@ -1,5 +1,5 @@
 body {
-    min-height: 1600px;
+    min-height: 1200px;
 }
 * {
     box-sizing: border-box;
@@ -14,9 +14,10 @@ p {
     margin: 10px;
 }
 .wrapper {
-    background: url(bckgr.jpg) center no-repeat;
+    background-image: url('bckgr.jpg');
     background-size: cover;
     position: relative;
+    min-height: 1200px;
 }
 /*.wrapper::before {
     content: '';
