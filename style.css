@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 16px;
+  }
+
+.wrapper {
+    background: url(bckgr.jpeg) cover center no-repeat;
+    position: relative;
+}
+.wrapper::after {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+}.textbox {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 30px;
+    margin: 0 auto;
+    padding: 10px;
+}
+span {
+    color: orangered;
+    text-decoration: underline;
+}
+
