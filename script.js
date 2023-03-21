@@ -1,21 +1,29 @@
-let textbox = document.querySelector('.textbox'),
-    btn = document.querySelector('button'),
-    width = textbox.clientWidth,
-    height = textbox.clientHeight,
+let box = document.querySelector('.box'),
+    btnMore = document.querySelector('.more'),
+    btnLess = document.querySelector('.less'),
+    width = box.clientWidth,
+    height = box.clientHeight,
     isOpened = false;
 
-console.log(textbox.getBoundingClientRect());
-console.log(document.documentElement.clientWidth);
-console.log(document.documentElement.clientHeight);
+initialSetup();
 
-btn.addEventListener('click', function() {
-    document.documentElement.scrollTop = 0;
+btnMore.addEventListener('click', function() {
     if(!isOpened) {
-        textbox.style.height = textbox.scrollHeight + 'px';
+        box.style.height = box.scrollHeight + 'px';
+        console.log(box.scrollHeight);
         isOpened = true;
-        console.log(isOpened);
+        btnMore.classList.add('invisible');
+        btnLess.classList.remove('invisible');
     } else if(isOpened) {
-        textbox.style.height = textbox.clientWidth + 'px';
+        box.style.height = 240 + 'px';
         isOpened = false;
+        //btnMore.classList.remove('invisible');
+        //btnLess.classList.add('invisible');
     }
 }); 
+
+function initialSetup() {
+    box.style.height = 240 + 'px';
+    box.scrollTop = 0;
+    btnLess.classList.add('invisible');
+}
