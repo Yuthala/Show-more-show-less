@@ -17,6 +17,8 @@ p {
     margin: 10px;
 }
 .wrapper {
+    display: flex;
+    flex-direction: column;
     background-image: url('bckgr.jpg');
     background-size: cover;
     position: relative;
@@ -35,42 +37,29 @@ p {
     position: absolute;
     width: 300px;
     height: 240px;
-    top: 2%;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
     padding: 10px;
-    border: 1px solid lightskyblue;
+    border: 1px solid #87cefa;
     z-index: 3;
     overflow-y: scroll;
 }
-button.more {
+button {
     position: absolute;
-    top: calc(5% + 230px);
+    top: 290px;
     left: 50%;
     transform: translateX(-50%);
-    color: orangered;
     text-decoration: underline;
     border: none;
-    font-weight: bold;
     background-color: transparent;
     z-index: 4;
     cursor: pointer;
 }
-button.less {
-    position: absolute;
-    top: calc(5% + 608px);
-    left: 50%;
-    transform: translateX(-50%);
-    color: lightcyan;
-    text-decoration: underline;
-    border: none;
+button > span {
+    color: #ff4400;
     font-weight: bold;
-    background-color: transparent;
-    z-index: 4;
-    cursor: pointer;
 }
-.invisible {
-    display: none;
-}
+
 
