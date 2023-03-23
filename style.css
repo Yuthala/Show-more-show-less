@@ -17,8 +17,6 @@ p {
     margin: 10px;
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
     background-image: url('bckgr.jpg');
     background-size: cover;
     position: relative;
